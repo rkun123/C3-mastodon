@@ -3,6 +3,18 @@ $fluid-breakpoint: $maximum-width + 20px;
 $column-breakpoint: 700px;
 $small-breakpoint: 960px;
 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~material-design-icons/iconfont/MaterialIcons-Regular.eot');
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url('~material-design-icons/iconfont/MaterialIcons-Regular.woff2') format('woff2'),
+  url('~material-design-icons/iconfont/MaterialIcons-Regular.woff') format('woff'),
+  url('~material-design-icons/iconfont/MaterialIcons-Regular.ttf') format('ttf')
+}
+
 .container {
   box-sizing: border-box;
   max-width: $maximum-width;
@@ -190,6 +202,31 @@ $small-breakpoint: 960px;
 
   & > :first-child {
     margin-top: 0;
+  }
+
+  .mdi {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
   }
 }
 
