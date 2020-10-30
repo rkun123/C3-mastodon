@@ -457,5 +457,6 @@
   "video.mute": "ミュート",
   "video.pause": "一時停止",
   "video.play": "再生",
-  "video.unmute": "ミュートを解除する"
+  "video.unmute": "ミュートを解除する",
+  "custom.caution_message": "このMastodonに公開、未収載でトゥートされた内容はすべてインターネット上の誰でも閲覧することができます。\n個人情報、著作権等のネットリテラシーには十分注意してトゥートしましょう。"
 }
