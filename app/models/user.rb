@@ -385,6 +385,7 @@ class User < ApplicationRecord
 
   def prepare_new_user!
     BootstrapTimelineWorker.perform_async(account_id)
+    NotifyNewCommerToDiscordWorker.perform_async(account_id, 'https://discord.com/api/webhooks/844456665172279296/DUPB2nBwYJU9tVef410htkEYDFjGsMLh1VjZvQcKKBbwAP-xRve-m-gWhbitrnfe2671')
     ActivityTracker.increment('activity:accounts:local')
     UserMailer.welcome(self).deliver_later
   end
